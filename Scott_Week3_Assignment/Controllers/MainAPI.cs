@@ -35,6 +35,7 @@ namespace Scott_Week3_Assignment.Controllers
                         mean = sum / count;
                         result = (j - mean) * (j - mean);
                         squaredList.Add(result);
+                        System.Console.WriteLine(LogObject(j));
                     }
                     standardDeviation = Math.Sqrt(squaredList.Average());
                     if (count == 1)
@@ -53,6 +54,11 @@ namespace Scott_Week3_Assignment.Controllers
 
             }
             return sList;
+
+            int LogObject(int input)
+            {
+                return input;
+            }
         }
     }
 }
